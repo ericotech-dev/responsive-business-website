@@ -1,0 +1,374 @@
+.navbar {
+    width: 100%;
+    background: #FFFFFF;
+    padding: 4px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.navbar {
+    position: sticky;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #7E6E64;
+    font-weight: 500;
+
+}
+.navbar .logo {
+    transform: translate(-15%, 3%);
+    width: 55px;
+    margin: 0px 80px;
+    display: flex;
+    display: inline-flex;
+    justify-content: space-between;
+    justify-content: center;
+}
+
+.navbar ul li {
+    transform: translate(-5%, -35%);
+    display: inline-block;
+    list-style: none;
+    font-size: 16px;
+    margin: 5px 15px;
+    margin-top: 50px;
+}
+
+.navbar ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: #7E6E64;
+}
+
+.navbar ul li a:not(.active):hover {
+    color: #f8e4a8;
+     font-weight: bold;
+}
+
+.navbar .menu {
+    display: none;
+    position: absolute;
+    top: 0.75rem;
+    right: 0.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.25rem;
+    height: 2rem;
+}
+
+.navbar .menu span{
+    height: 0.4rem;
+    width: 100%;
+    background-color: #7E6E64;
+    border-radius: 0.2rems;
+}
+
+/* ------- media query -------------*/
+
+@media (max-width: 1000px){
+    .navbar .logo{
+        transform: translate(-15%, 3%);
+        width: 50px;
+        margin: 0px 80px;
+        display: inline-block;
+    }
+}
+    .navbar ul li{
+        margin-top: 40px;
+        font-size: 14px;
+}
+
+/* ------- media query -------------*/
+
+@media (max-width:850px){
+
+    .logo{
+        width: 40px;
+    }
+}
+
+
+/* ------- media query -------------*/
+
+@media (max-width:830px){
+
+    .logo{
+        width: 38px;
+    }
+
+}
+
+
+/* ------- media query -------------*/
+
+@media (max-width:813px){
+
+    .logo{
+        width: 38px;
+    }
+
+    .navbar .menu {
+        display: flex;
+        transform: translate(-100%, 70%);
+     }
+
+    .navbar {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .active {
+        background-color: #FFFFFF;
+    }
+
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        padding-top: 25px;
+        margin-bottom: 0.25rem;
+        background-color: #F5F5DC;
+    }
+
+    .navbar ul.open{
+        display: flex;
+    }
+
+    .navbar ul li{
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar ul li {
+        flex-direction: column;
+        transform: translate(-1.8%, 0%);
+        align-items: center;
+        justify-content: center;
+        margin: 3px 12px;
+        margin-top: 25px;
+        font-weight: 600;
+
+    }
+
+    .navbar ul li a{
+        transform: translate(0%, 0%);
+        align-items: center;
+        text-decoration: none;
+        color: #7E6E64;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+    }
+
+    .navbar ul li a {
+        margin: 0.2rem 0.5rem;
+    }
+    .navbar a{
+        margin-right: 20px;
+        font-size: 16px;
+      }
+
+    .navbar .menu span{
+      height: 0.4rem;
+      width: 100%;
+      background-color: #7E6E64;
+      border-radius: 0.2rems;
+    }
+}
+
+/* ------- media query -------------*/
+
+@media (max-width: 1000px){
+    .navbar .logo{
+        transform: translate(-15%, 3%);
+        width: 50px;
+        margin: 0px 80px;
+        display: inline-block;
+    }
+}
+
+.navbar ul li{
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+/* ------- media query -------------*/
+
+@media (max-width:900px){
+    .logo{
+        width: 40px;
+    }
+
+.navbar ul li a{
+    transform: translate(0%, 0%);
+}
+}
+
+@media (max-width:800px){
+
+    .logo{
+        width: 38px;
+    }
+
+.navbar ul li a{
+    transform: translate(0%, 0%);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+}
+@media (max-width:800px){
+    .navbar .logo{
+        transform: translate(5%, 3%);
+    }
+}
+/* ------- media query -------------*/
+
+@media (max-width:700px){
+
+    .logo{
+        width: 38px;
+    }
+    
+    .navbar .logo{
+        transform: translate(5%, 3%);
+    }
+
+    .navbar .menu {
+        display: flex;
+        transform: translate(-100%, 70%);
+     }
+
+    .navbar {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .active {
+        background-color: #FFFFFF;
+    }
+
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        padding-top: 25px;
+        margin-bottom: 0.25rem;
+        background-color: #F5F5DC;
+    }
+
+    .navbar ul.open{
+        display: flex;
+    }
+
+    .navbar ul li{
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar ul li {
+        flex-direction: column;
+        transform: translate(-1.8%, 0%);
+        align-items: center;
+        justify-content: center;
+        margin: 3px 12px;
+        margin-top: 25px;
+        font-weight: 600;
+    }
+
+    .navbar ul li a{
+        transform: translate(0%, 0%);
+        align-items: center;
+        text-decoration: none;
+        color: #7E6E64;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+    }
+
+    .navbar ul li a {
+        margin: 0.2rem 0.5rem;
+    }
+    .navbar a{
+        margin-right: 20px;
+        font-size: 16px;
+      }
+
+    .navbar .menu span{
+      height: 0.4rem;
+      width: 100%;
+      background-color: #7E6E64;
+      border-radius: 0.2rems;
+    }
+}
+
+@media (max-width:600px){
+.navbar ul li a{
+    transform: translate(0%, 0%);
+
+}
+.navbar .logo{
+    transform: translate(5%, 3%);
+}
+}
+
+@media (max-width:500px){
+.navbar .logo{
+    transform: translate(5%, 3%);
+}
+}
+
+@media (max-width:400px){
+.navbar .logo{
+    transform: translate(5%, 3%);
+}
+}
+
+
+/* ------- media query -------------*/
+
+@media (max-width:300px){
+
+
+.navbar ul li a{
+    transform: translate(0%, 0%);
+}
+.navbar .logo{
+    transform: translate(5%, 3%);
+}
+}
+
+/* ------- media query -------------*/
+
+
+@media (max-width:200px){
+
+.navbar ul li a{
+    transform: translate(0%, 0%);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+}
+
+@media (max-width:412px){
+.navbar ul li a{
+    transform: translate(0%, 0%);
+}
+.navbar .logo{
+    transform: translate(5%, 3%);
+}
+}
+
+@media (max-width:375px){
+.navbar ul li a{
+        transform: translate(0%, 0%);
+}
+.navbar .logo{
+        transform: translate(5%, 3%);
+}
+}

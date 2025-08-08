@@ -1,0 +1,322 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{              /*here we select all the html element*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+body{
+  background: #F5F5F5;
+}
+
+.navbar {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.btn {
+transform: translate(-13%, 25%);
+  background: #000;
+  color: #fff;
+  padding: 14px 25px;
+  font-size: 15px;
+  margin: 5px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+}
+
+.hero-btn {
+    background: #000;
+    color: #fff;
+    padding: 14px 25px;
+    font-size: 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(5%, 0%);
+  }
+
+  .services .container1 {
+    display: block;
+    cursor: pointer;
+    height: 100%;
+    clip-path: inset(7% 0% 0% 0%);   
+    margin-top: 25px;
+}
+
+  /*.paypal-buttons .paypal-button-top {
+    visibility: hidden; /* Hide the top part of the label */
+
+
+  .container {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .services .container1 {
+    position: relative;
+    z-index: 0;
+    }
+
+  .hero-btn img{
+    width: 20px;
+    margin-left: 10px;
+    color: #fff;
+  }
+
+  .dark-btn {
+    background: #000;
+    color: #fff;
+    padding: 14px 25px;
+    font-size: 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    margin: auto;
+    top: 0;
+    margin-top: 25px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(52px, 0%);
+
+  }
+  
+  .dark-btn img{
+    width: 20px;
+    margin-left: 10px;
+    color: #fff;
+  }
+
+a {
+  text-decoration: none;
+  color: inherit;
+  line-height: 1;
+  cursor: pointer;
+}
+.company-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Center text horizontally */
+}
+
+.company-name, .company-description {
+  margin: 3px; /* Adjust margin as needed */
+}
+.company-info {
+  margin-right: 20px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+
+/* ------- media query -------------*/
+
+@media (max-width: 1115px){
+  .extra .dark-btn{
+    transform: translate(35%, -20%);
+  }
+}
+
+
+
+/* ------- media query -------------*/
+
+@media (max-width: 1080px){
+  .extra .dark-btn{
+    transform: translate(35%, -20%);
+  }
+}
+
+/* ------- media query -------------*/
+
+@media (max-width: 1050px){
+  .extra .dark-btn{
+    transform: translate(35%, -20%);
+  }
+}
+
+/* ------- media query -------------*/
+
+@media (max-width: 1000px){
+  .extra .dark-btn{
+    transform: translate(35%, -20%);
+  }
+}
+
+/* ------- media query -------------*/
+
+@media (max-width: 900px){
+  .navbar {
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+  }
+  .extra .dark-btn{
+    transform: translate(25%, -20%);
+  }
+  .services .container1 {
+    display: block;
+    cursor: pointer;
+    height: 100%;
+    clip-path: inset(6.5% 0% 0% 0%);   
+    margin-top: 25px;
+}
+}
+
+  /* ------- media query -------------*/
+
+
+@media (max-width: 800px){
+   .extra .dark-btn{
+    transform: translate(35%, -40%);
+  }
+  .navbar {
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+  }
+
+   .btn {
+    transform: translate(0%, 0%);
+    margin: auto;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+}
+.company-info {
+  margin-right: 20px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+  .navbar .btn {
+  padding: 13px 20px;
+  }
+
+  .company-info {
+    margin-right: 20px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  }
+
+/*---------media----------------------*/
+@media (max-width: 700px) {
+
+  .extra .dark-btn{
+    transform: translate(40%, -40%);
+  }
+
+  .company-info {
+    margin-right: 20px;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .navbar {
+    padding-left: 1.2%;
+    padding-right: 1.2%;
+  }
+ 
+}
+
+/*---------media----------------------*/
+@media (max-width: 600px) {
+  .extra .dark-btn{
+    transform: translate(20%, -40%);
+  }
+  .navbar {
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+  }
+  .services .container1 {
+    display: block;
+    cursor: pointer;
+    height: 100%;
+    clip-path: inset(9% 0% 0% 0%);   
+    margin-top: 25px;
+}
+  .company-info {
+    margin-right: 20px;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .btn {
+    transform: translate(0%, 0%);
+    margin: auto;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+}
+}
+
+@media (max-width: 500px) {
+  .navbar {
+    padding-left: 1.2%;
+    padding-right: 1.2%;
+  }
+  .extra .dark-btn{
+    transform: translate(10%, -50%);
+  }
+}
+
+@media (max-width: 400px) {
+  .navbar {
+    padding-left: 1.2%;
+    padding-right: 1.2%;
+  }
+  .extra .dark-btn{
+    transform: translate(15%, -50%);
+  }
+  .services .container1 {
+    display: block;
+    cursor: pointer;
+    height: 100%;
+    clip-path: inset(9% 0% 0% 0%);   
+    margin-top: 25px;
+}
+.hero-btn {
+  transform: translate(-4%, 0%);}
+
+}
+
+@media (max-width: 300px) {
+  .navbar {
+    padding-left: 1.2%;
+    padding-right: 1.2%;
+  }
+  .extra .dark-btn{
+    transform: translate(15%, -50%);
+  }
+  .services .container1 {
+    display: block;
+    cursor: pointer;
+    height: 100%;
+    clip-path: inset(9% 0% 0% 0%);   
+    margin-top: 25px;
+}
+.hero-btn {
+  transform: translate(-5%, 0%);}
+
+}
